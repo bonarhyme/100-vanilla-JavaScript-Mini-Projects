@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+.full-container {
+  background-color: aqua;
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  border-radius: 50%;
+  transition: transform 0.8s linear;
+  left: -100px;
+  top: -100px;
+}
+
+.full-container.rotate {
+  transform: rotate(-180deg);
+}
+
+button {
+  position: absolute;
+  bottom: 70%;
+  left: 40%;
+}
+
+#open {
+  left: 70%;
+  bottom: 20%;
+}
+
+#close {
+  transform: translateX(-50px);
+}
